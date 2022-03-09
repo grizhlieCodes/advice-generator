@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap");
+
+body {
+  background: #202733;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding-inline: 1.6rem;
+}
+
+.advice-generator {
+  font-family: "Manrope", sans-serif;
+  /* Fonts below will inherit this font family */
+  width: 100%;
+  max-width: 54rem;
+  display: grid;
+  grid: max-content 3.2rem / 1fr;
+}
+
+.advice-generator__output {
+  background: #313a48;
+  padding: 4rem 2.4rem 6.4rem;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 2.4rem;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  grid-row: 1/2;
+  grid-column: 1/2;
+}
+
+.advice-generator__advice-number {
+  font-weight: 700;
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.345714rem;
+  color: #53ffaa;
+}
+
+@media screen and (min-width: 545px) {
+  .advice-generator__advice-number {
+    letter-spacing: 0.408571rem;
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+  }
+}
+
+.advice-generator__quote {
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 3.3rem;
+  letter-spacing: -0.0257143rem;
+  color: #cee3e9;
+}
+
+@media screen and (min-width: 545px) {
+  .advice-generator__quote {
+    margin-bottom: 1.6rem;
+    font-size: 2.8rem;
+    line-height: 3.8rem;
+    letter-spacing: -0.03rem;
+  }
+}
+
+.advice-generator__divider {
+  display: flex;
+  width: 100%;
+}
+
+picture > img {
+  margin: auto;
+  width: 100%;
+}
+
+.advice-generator__btn {
+  width: 6.4rem;
+  height: 6.4rem;
+  background: #53ffaa;
+  border-radius: 50%;
+  grid-row: 2/3;
+  grid-column: 1/2;
+  place-self: end center;
+  transition: box-shadow 250ms;
+  cursor: pointer;
+}
+
+.advice-generator__btn:is(:hover) {
+  box-shadow: 0px 0px 20px #53ffaa;
+}
+
+.advice-generator__btn-img {
+  transition: transform 250ms;
+}
+.advice-generator__btn:is(:hover) > img {
+  transform: rotate(135deg);
+}
