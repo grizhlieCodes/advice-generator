@@ -90,6 +90,8 @@ picture > img {
   place-self: end center;
   transition: box-shadow 250ms;
   cursor: pointer;
+  display: grid;
+  place-items: center;
 }
 
 .advice-generator__btn:is(:hover) {
