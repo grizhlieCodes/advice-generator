@@ -28,6 +28,7 @@ body {
   text-align: center;
   grid-row: 1/2;
   grid-column: 1/2;
+  border-radius: 1.5rem;
 }
 
 .advice-generator__advice-number {
